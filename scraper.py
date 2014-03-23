@@ -7,11 +7,11 @@ import simplejson
 import urllib2
 
 
-QUERY = 'aras11 OR aras OR president'
-GEOINFO = '53.26521293124656,-9.063720703125,257km'
+QUERY = 'healthcare or health%20care or obamacare or Obamacare or ACA or Affordable%20Care%20Act'
+GEOINFO = '39.014062,-96.152344,2500 km'
 RESULTS_PER_PAGE = '100'
 LANGUAGE = 'en'
-NUM_PAGES = 15 
+NUM_PAGES = 150 
 
 for page in range(1, NUM_PAGES+1):
     base_url = 'http://search.twitter.com/search.json?q=%s&geocode=%s&rpp=%s&lang=%s&page=%s' \
